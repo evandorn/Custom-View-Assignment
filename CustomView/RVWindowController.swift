@@ -102,11 +102,11 @@ class RVWindowController: NSWindowController {
     }
     
     @IBAction func clickedGradientCheckbox(sender: AnyObject) {
-        if gradientCheckbox.state == NSOnState {
+        if(gradientCheckbox.state == NSOnState) {
             isGradient = true
             customView.contentView?.updateGradient(isGradient!)
             customView.contentView?.needsDisplay = true
-        } else if gradientCheckbox.state == NSOffState {
+        } else if(gradientCheckbox.state == NSOffState) {
             isGradient = false
             customView.contentView?.updateGradient(isGradient!)
             customView.contentView?.needsDisplay = true

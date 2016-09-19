@@ -73,15 +73,15 @@ class RVCustomView: NSView {
             CGContextSetStrokeColorWithColor(context, self.borderColor!.CGColor)
             CGContextMoveToPoint(context, 0, 0)
             CGContextAddLineToPoint(context, 0, self.frame.size.height)
-            CGContextStrokePath(context);
+            CGContextStrokePath(context)
             CGContextSetStrokeColorWithColor(context, self.borderColor!.CGColor)
             CGContextMoveToPoint(context, 0, 0);
             CGContextAddLineToPoint(context, self.frame.size.width, 0)
-            CGContextStrokePath(context);
+            CGContextStrokePath(context)
             CGContextSetStrokeColorWithColor(context, self.borderColor!.CGColor)
-            CGContextMoveToPoint(context, 0, self.frame.size.height);
+            CGContextMoveToPoint(context, 0, self.frame.size.height)
             CGContextAddLineToPoint(context, self.frame.size.width,self.frame.size.height)
-            CGContextStrokePath(context);
+            CGContextStrokePath(context)
             CGContextSetStrokeColorWithColor(context, self.borderColor!.CGColor)
             CGContextMoveToPoint(context,self.frame.size.width,self.frame.size.height)
             CGContextAddLineToPoint(context,self.frame.size.width,0)
