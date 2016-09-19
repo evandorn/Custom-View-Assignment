@@ -51,6 +51,10 @@ class RVWindowController: NSWindowController {
   
     @IBAction func displayBorderSwitches(sender: AnyObject) {
         if(allButton.state == NSOnState) {
+            rightButton.state = NSOffState
+            leftButton.state = NSOffState
+            bottomButton.state = NSOffState
+            topButton.state = NSOffState
             customView.contentView?.allBorderSelection = true
             customView.contentView?.needsDisplay = true
         } else if(allButton.state == NSOffState) {
